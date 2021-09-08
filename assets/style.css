@@ -1,0 +1,178 @@
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+  color: white;
+}
+
+/* gives the subtitle attributes */
+.subtitle {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  width: 100%;
+  height: 20vh;
+  padding: 5%;
+  background-color: rgba(235, 237, 243, 0.911);
+}
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 180%;
+}
+/* defines the attributes of the article */
+article {
+
+margin: 2% 0;
+font-size: 110%;
+font-family: Arial;
+padding: 0 10% 0 5%;
+font-style: normal;
+}
+/* Highlights the links when the cursor hovers on top */
+.nav{
+
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: #b9C6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 1200px;
+  margin: 2% auto;
+}
+/* this determines the features of the flexbox */
+.box-container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 20%;
+    align-items: flex-start;
+   
+}
+/* the flexbox with their properties */
+.box-1 {
+  flex:1;
+  width: 50%;
+  font-size: 180%;
+  font-weight: bold;
+  height: 25%;
+  border-bottom: 1px solid #d8a47f;
+}
+
+.box-2{
+  flex:2;
+  width:50%;
+  height: 25%;
+  margin: 0 20%;
+ 
+}
+.box-3 {
+  flex:3;
+  width: 50%;
+  height: 30%;
+  font-size: 180%;
+  font-weight: bold;
+  height: 50%;
+  border-bottom: 1px solid #d8a47f;
+}
+
+.box-4 {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* This is a class within the flex box to give attributes to the children under the flexbox */
+.work {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+
+.work header {
+  padding: 20px;
+}
+
+.work p {
+  text-align: center;
+}
+
+.work img {
+  width: 100%;
+}
+.box-5 {
+  flex:5;
+  width: 50%;
+  height: 30%;
+  font-size: 180%;
+  font-weight: bold;
+  height: 25%;
+  border-bottom: 1px solid #d8a47f;
+}
+.box-6 {
+  flex:6;
+  width:50%;
+  align-items: center;
+  height: 25%;
+  margin: 0 20%;
+
+}
+/* Defines the maximum width */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+  margin-top: auto;
+}
